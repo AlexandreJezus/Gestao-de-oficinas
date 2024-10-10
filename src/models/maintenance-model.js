@@ -42,4 +42,4 @@ const serviceSchema = new Schema({
 });
 const Service = model("Service", serviceSchema);
 
-export default Maintenance;
+export default { Maintenance, Service };
