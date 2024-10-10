@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const maintenanceSchema = new Schema({
+export const maintenanceSchema = new Schema({
   workshop: {
     type: Schema.Types.ObjectId,
     ref: "Workshop",
@@ -16,7 +16,7 @@ const maintenanceSchema = new Schema({
     required: true,
   },
   date: {
-    type: db.Schema.Types.Date,
+    type: Schema.Types.Date,
     required: true,
   },
   totalCost: {
@@ -26,7 +26,7 @@ const maintenanceSchema = new Schema({
   },
 });
 
-const Maintenance = model("Maintenance", maintenanceSchema);
+export const Maintenance = model("Maintenance", maintenanceSchema);
 
 const serviceSchema = new Schema({
   name: {
@@ -41,4 +41,4 @@ const serviceSchema = new Schema({
 });
 const Service = model("Service", serviceSchema);
 
-export default Maintenance;
+export default { Maintenance, Service };
