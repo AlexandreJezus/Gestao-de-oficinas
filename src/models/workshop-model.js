@@ -17,7 +17,7 @@ const workshopSchema = new Schema({
   maintenances: {
     type: Schema.Types.ObjectId,
     ref: "Maintenance",
-    required: true,
+    required: false,
   },
 });
 

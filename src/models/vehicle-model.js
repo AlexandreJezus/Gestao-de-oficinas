@@ -5,8 +5,6 @@ const vehicleSchema = new Schema({
     type: String,
     required: true,
     unique: true,
-    maxLenght: 7,
-    minLenght: 7,
   },
   model: {
     type: String,
@@ -23,7 +21,7 @@ const vehicleSchema = new Schema({
   maintenances: {
     type: Schema.Types.ObjectId,
     ref: "Maintenance",
-    required: true,
+    required: false,
   },
 });
 
