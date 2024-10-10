@@ -5,7 +5,8 @@ import {
   show,
   store,
   update,
-} from "../controllers/maintenance-controller.js";
+} from "../controllers/maintenance-controller";
+
 const router = Router();
 
 router.post("/", store);

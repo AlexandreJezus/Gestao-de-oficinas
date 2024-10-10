@@ -6,6 +6,7 @@ import {
   store,
   update,
 } from "../controllers/vehicle-controller.js";
+
 const router = Router();
 
 router.post("/", store);

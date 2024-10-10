@@ -1,5 +1,4 @@
 import { Schema, model } from "mongoose";
-import db from "src/db.js";
 
 const maintenanceSchema = new Schema({
   workshop: {
@@ -42,4 +41,4 @@ const serviceSchema = new Schema({
 });
 const Service = model("Service", serviceSchema);
 
-export default { Maintenance, Service };
+export default Maintenance;
